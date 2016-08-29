@@ -9,7 +9,6 @@ Each square is represented using 2 bits. The meaning of the binary values are:
 10: Cross
 11: Invalid
 
-
 # License & Copyright
 
 GPLv3.0
