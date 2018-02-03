@@ -53,6 +53,7 @@ int issolved(state current, unsigned char *won)
 {
 	unsigned char tmp = 0;
 
+	/* Clear the 2 LSB bits */
 	current.row1 &= 0xfc;
 	current.row2 &= 0xfc;
 	current.row3 &= 0xfc;
@@ -134,11 +135,10 @@ int main()
 			printf("TICK (1) won!\n");
 		else
 			printf("CROSS (2) won!\n");
-	} else if (won == INVALID) {
+	} else if (won == INVALID)
 		printf("Invalid state\n");
-	} else {
+	else
 		printf("Not solved yet\n");
-	}
 
 	return 0;
 }
